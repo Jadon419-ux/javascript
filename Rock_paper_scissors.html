@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <p>Rock Paper Scissors</p>
+    <title> 
+      Rock_Paper_Scissors
+    </title>
+ 
+  </head>
+  <body>
+    <button onclick="
+      var Tie = 0
+      var Won = 0
+      var lose = 0
+      var ran = Math.random();
+      if(ran>=0.7){
+        alert('You lost Computer chose Paper!!');
+        lose++
+      }else if(ran<=0.4){
+        alert('You won Computer chose Scissors!!')
+        Won++
+      }else{alert('That is a tie Computer chose Rock');
+        Tie = Tie++
+      }
+      console.log(lose);
+     console.log(Won);
+     console.log(Tie);">Rock</button>
+    <button onclick=" 
+    var Tie = 0
+    var Won = 0
+    var lose = 0
+    var ran = Math.random();
+    if(ran>=0.7){
+      alert('You lost Computer chose Scissors!!');
+      lose++
+    }else if(ran<=0.4){
+      alert('You won Computer chose Rock!!')
+      Won++
+    }else{alert('That is a tie Computer chose paper');
+      Tie = Tie++
+    }">Paper</button>
+    <button onclick=" var Tie = 0
+    var Won = 0
+    var lose = 0
+    var ran = Math.random();
+    if(ran>=0.7){
+      alert('You lost Computer chose stone!!');
+      lose++
+    }else if(ran<=0.4){
+      alert('You won Computer chose paper!!')
+      Won++
+    }else{alert('That is a tie Computer chose Scissors');
+      Tie = Tie++
+    }">Scissors</button>
+    <script>
+     const sammy = 8
+     console.log(sammy<5? 'truthy': 'falsy');
+
+
+     const message = 'pit' && "hello"
+     console.log(message)
+     
+    </script>
+   
+  </body>
+</html>

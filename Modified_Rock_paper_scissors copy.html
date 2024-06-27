@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <p>Rock Paper Scissors</p>
+    <title> 
+      Rock_Paper_Scissors
+    </title>
+ 
+  </head>
+  <body>
+    <button onclick="
+      fuction1()
+      ">Rock</button>
+    <button onclick=" 
+   fuction1()
+   ">Paper</button>
+    <button onclick=" 
+    fuction1()
+    ">Scissors</button>
+
+
+  
+
+
+    <script>
+      var score = fuction2()
+      
+      
+       (localStorage.setItem('score',JSON.stringify(score)))
+      
+      console.log(JSON.parse(localStorage.getItem('score')))
+
+      
+      alert(`Wins: ${score.wins}, losses: ${score.losses}, Ties: ${score.ties}`);
+      
+      function fuction1()
+      {var ran = Math.random();
+        const score = {
+        wins: 0,
+        losses: 0,
+        ties: 0
+
+      };
+      if(ran>=0.7){
+        result = 'You lost';
+        alert(result);
+        score.losses+=1
+        
+     
+
+
+      }else if(ran<=0.4){
+        result = 'You won';
+        alert(result)
+        score.wins+=1
+        
+     
+
+
+      }else{
+        result = 'You Tied';
+        alert(result);
+        score.ties+=1
+        
+      
+      }
+
+      
+      
+
+
+
+      
+      
+    /* const sammy = 8
+     console.log(sammy<5? 'truthy': 'falsy');
+
+
+     const message = 'pit' && "hello"
+     console.log(message)*/
+}
+
+
+
+
+function fuction2()
+      {var ran = Math.random();
+        const score = {
+        wins: 0,
+        losses: 0,
+        ties: 0
+
+      };
+      if(ran>=0.7){
+        result = 'You lost';
+      
+        score.losses+=1
+        
+     
+
+
+      }else if(ran<=0.4){
+        result = 'You won';
+        
+        score.wins+=1;
+        
+     
+
+
+      }else{
+        result = 'You Tied';
+      
+        score.ties+=1;
+        
+      
+      }
+
+      return score
+      
+
+
+
+      
+      
+    /* const sammy = 8
+     console.log(sammy<5? 'truthy': 'falsy');
+
+
+     const message = 'pit' && "hello"
+     console.log(message)*/
+}
+      
+     
+    </script>
+   
+  </body>
+</html>

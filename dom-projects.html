@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      DOM_Projects
+    </title>
+
+  </head>
+  <body>
+    <p>YouTube Subscribe Button</p>
+    <p2>
+      <button  onclick="
+     
+       subscribe()
+      
+
+        ">
+        subscribe
+      </button>
+    </p2>
+  
+   
+    <script>
+      function subscribe(){
+        console.log(document.querySelector('button').innerHTML);
+      if(document.querySelector('button').innerHTML === 'subscribe'){
+        document.querySelector('button').innerHTML = 'subscribed'}else{
+          document.querySelector('button').innerHTML = 'subscribe'
+        }
+      
+
+      }
+      
+        
+     
+    </script>
+  </body>
+</html>
